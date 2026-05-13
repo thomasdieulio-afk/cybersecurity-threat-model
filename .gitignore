@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor artifacts
+*.swp
+*.bak
+*.orig
+.vscode/
+.idea/
+
+# Sensitive files — never commit these
+*.key
+*.pem
+*.env
+secrets/
+credentials/
+passwords.txt
+
+# Temp files
+*.tmp
+*.log
