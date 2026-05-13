@@ -15,6 +15,7 @@
 - [Folder Structure](#folder-structure)
 - [Threat Actors](#threat-actors)
 - [Attack Surface](#attack-surface)
+- [Recon & Enumeration](#recon--enumeration)
 - [Honeypot Strategies](#honeypot-strategies)
 - [Detection Strategies](#detection-strategies)
 - [Mitigations](#mitigations)
@@ -27,8 +28,8 @@
 
 This repository contains a comprehensive threat model developed to identify, analyze, and
 prioritize security threats against a target environment. The model follows a structured
-methodology covering adversary profiling, surface enumeration, deception tactics,
-detection engineering, and layered mitigation planning.
+methodology covering adversary profiling, surface enumeration, active reconnaissance,
+deception tactics, detection engineering, and layered mitigation planning.
 
 The threat model is intended to serve as a living document — updated as the environment
 evolves, new threat intelligence emerges, or controls are implemented.
@@ -39,9 +40,10 @@ evolves, new threat intelligence emerges, or controls are implemented.
 
 | Folder | Description |
 |---|---|
-| `docs/` | Full threat model report (.docx) and executive summary |
+| `docs/` | Full threat model report (.docx), worksheet (.xlsx), and executive summary |
 | `threat-actors/` | Profiles of identified adversaries and threat groups |
 | `attack-surface/` | Enumeration of entry points, assets, and exposure areas |
+| `recon/` | Active scanning and enumeration findings (Nmap, SMB, LDAP, ffuf, WMI) |
 | `honeypot-strategies/` | Deception and canary-based detection architectures |
 | `detection-strategies/` | SIEM rules, alerting logic, and behavioral indicators |
 | `mitigations/` | Prioritized controls mapped to identified threats |
@@ -65,6 +67,16 @@ A mapped enumeration of all identified attack vectors, exposed services, network
 entry points, and asset categories within scope.
 
 📄 See [`attack-surface/attack_surface.md`](attack-surface/attack_surface.md)
+
+---
+
+## Recon & Enumeration
+
+Active scanning and enumeration findings from the MegaQuagga lab environment, covering
+39 scan categories across Nmap, SMB, LDAP, WMI, ffuf, and web banner analysis. Includes
+before/after hardening comparisons and full MITRE ATT&CK technique mapping.
+
+📄 See [`recon/scan-findings.md`](recon/scan-findings.md)
 
 ---
 
@@ -97,7 +109,7 @@ including recommended implementation sequencing and ownership.
 
 ## Full Report
 
-The complete threat model report is available in the `docs/` directory:
+The complete threat model report and supporting documents are available in the `docs/` directory:
 
 📎 [`docs/Threat_Model_Report_Thomas_DiEulio.docx`](docs/Threat_Model_Report_Thomas_DiEulio.docx)
 📊 [`docs/Threat_Modeling_Worksheet_Thomas_DiEulio.xlsx`](docs/Threat_Modeling_Worksheet_Thomas_DiEulio.xlsx)
