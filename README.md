@@ -100,6 +100,7 @@ including recommended implementation sequencing and ownership.
 The complete threat model report is available in the `docs/` directory:
 
 📎 [`docs/Threat_Model_Report_Thomas_DiEulio.docx`](docs/Threat_Model_Report_Thomas_DiEulio.docx)
+📊 [`docs/Threat_Modeling_Worksheet_Thomas_DiEulio.xlsx`](docs/Threat_Modeling_Worksheet_Thomas_DiEulio.xlsx)
 
 ---
 
